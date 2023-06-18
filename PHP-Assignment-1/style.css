@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Handwriting-like font */
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto 100%;
+}
+
+header {
+    background-image:url('https://png.pngtree.com/thumb_back/fh260/back_our/20190622/ourmid/pngtree-purple-minimalist-music-note-banner-background-image_233650.jpg');
+    margin-bottom:5px;
+    border-radius:15px;
+    color: #fff;
+    padding: 1rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo-container {
+    display: flex;
+    background-color:black;
+    border-radius:10px;
+    align-items: center;
+}
+header .logo-container img{
+  max-width:1in;
+  max-height:1in;
+}
+
+header .nav-links {
+    display: flex;
+    size-adjust:20px;
+    list-style: none;
+}
+
+.nav-button {
+  display: inline-block;
+  background: white;
+  color: #333;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-right: 1rem;
+}
+
+.nav-button:hover {
+   background: #333;
+  color: white;
+}
+
+.container {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.music-section {
+  display: flex;
+  width: 100%; 
+  align-items: center; 
+}
+
+.music-section-container {
+  background-color: #282828;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+  height: 250px;
+  width: 80%;
+  padding: 40px;  /* increased padding */
+  margin: 50px auto; 
+  border-radius: 10px;
+}
+
+.music-poster {
+  width: 20%;
+  height: 80%;
+  border-radius: 5px;
+  margin-right: 60px; /* increased margin-right */
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; 
+}
+
+
+.music-poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+}
+
+.music-player-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.music-player {
+  width: 100%;
+}
+
+.music-player audio {
+  width: 100%;
+}
+
+.song-details-section {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #b3b3b3;
+}
+
+.song-details-section h3 {
+  color: #ffffff;
+  font-size: 2em;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 5px;
+}
+
+/* Contact */
+
+#contact {
+  background-image: url('https://img.freepik.com/premium-photo/colorful-music-with-notes-creative-digital-illustration-abstract-colors_743855-10782.jpg');
+  background-size: cover;
+  padding: 4rem 0;
+  border-radius:15px;
+}
+
+#contact h1 {
+  position: relative;
+  text-align: left;
+  color:whitesmoke;
+  text-transform: uppercase;
+  left: 20px; 
+  top: 10px;
+  margin-bottom: 2rem;
+  font-family: 'Indie Flower', cursive;
+}
+
+label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.5rem; 
+  font-weight: bold; 
+  color: whitesmoke; 
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 40%;
+  padding: 1rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  display: block;
+  background: whitesmoke;
+  color: #333;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: #333;
+  color: white;
+}
+
+/* Footer */
+
+footer {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+}
