@@ -29,24 +29,20 @@
                     $password = "password";
                     $dbname = "user_info";
 
-                    // Create connection
                     $conn = new mysqli($servername, $username, $password, $dbname);
 
-                    // Check connection
                     if ($conn->connect_error) {
                         die("Connection failed: " . $conn->connect_error);
                     }
 
-                    // Check if form is submitted
                     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                         // Get the form data
                         $name = mysqli_real_escape_string($conn, $_POST["name"]);
                         $email = mysqli_real_escape_string($conn, $_POST["email"]);
                         $message = mysqli_real_escape_string($conn, $_POST["message"]);
-
-                        // Prepare SQL query to insert data into the database
-                        $sql = "INSERT INTO contact_form (name, email, message) VALUES ('$name', '$email', '$message')"; // replace 'your_table' with your actual table name
+                        
+                        $sql = "INSERT INTO contact_form (name, email, message) VALUES ('$name', '$email', '$message')";
 
                         if ($conn->query($sql) === TRUE) {
                             echo "New record created successfully";
@@ -59,7 +55,6 @@
 
                         
                         if ($result->num_rows > 0) {
-                            // Output data of each row
                             while($row = $result->fetch_assoc()) {
                                 echo "Name: " . $row["name"]. ", Email: " . $row["email"]. ", Message: " . $row["message"]. "<br>";
                             }
@@ -68,7 +63,6 @@
                         }
                     }
 
-                    // Close connection
                     $conn->close();
                 ?>
             </div>
