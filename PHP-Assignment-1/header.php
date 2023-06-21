@@ -2,6 +2,13 @@
 <html lang="en">
 <head>
     <script src="script.js"></script>
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
 </head>
 <body>
     <nav>
@@ -11,7 +18,7 @@
         <ul class="nav-links">
             <li><button class="nav-button" onclick="location.href='index.php'">Home</button></li>
             <li><button class="nav-button" onclick="location.href='About.php'">About</button></li>
-            <li><button class="nav-button" onclick="scrollToSection('contact')">Contact</button></li>
+            <li><button class="nav-button" onclick="location.href='index.php?section=contact'">Contact</button></li>
         </ul>
     </nav>
 </body>
